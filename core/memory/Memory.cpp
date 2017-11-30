@@ -13,29 +13,29 @@ Memory::Memory(size_t max_memory) {
 }
 
 size_t Memory::get_memory_pointer(size_t data_size){
-	size_t old = free_pointer;  // Memory location to return in case check is successful
+	size_t old = free_pointer;  // memory location to return in case check is successful
 	free_pointer += data_size;
-	if (free_pointer < max_memory)  // Check if requested memory exists
+	if (free_pointer < max_memory)  // check if requested memory exists
 		return old;
-	// Raise Out of Memory Exception
+	// raise out of memory exception
 }
 
 void Memory::store_data(char* location, size_t destination, size_t data_size){
-	if(destination + data_size < free_pointer){  // Check is requested space exists
+	if(destination + data_size < free_pointer){  // check is requested space exists
 		for(size_t i = 0; i < data_size; ++i){
-			memory[destination + i] = location + i;
+			memory[destination + i] = location[i]; // copy data over from source to memory
 		}
-	} else {  // Resort to Default
-		// Raise Out of Memory Exception
+	} else {  // resort to default
+		// raise out of memory exception
 	}
 }
 
 char* Memory::load_data(size_t location, size_t data_size){
-	if(location + data_size < free_pointer){  // Check if requested memory exists
-		char* memory_pointer = memory[location];  // Create a pointer to that location in the memory array
+	if(location + data_size < free_pointer){  // check if requested memory exists
+		char* memory_pointer = &memory[location];  // create a pointer to that location in the memory array
 		return memory_pointer;
 	} else {
-		// Raise Trying to Read Unallocated Memory Exception
+		// raise trying to read unallocated memory exception
 	}
 }
 
