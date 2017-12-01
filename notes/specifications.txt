@@ -125,7 +125,7 @@ ROTHWL      n               ROTate Half Word Left by n-bits
 ROTR        n               ROTate word Right by n-bits
 ROTBR       n               ROTate Byte Right by n-bits
 ROTDWR      n               ROTate Double Word Right by n-bits
-ROTHWR      n               ROTate Half Word Right by n-bits
+ROTHWR      n               ROTate Half Word Right by n-bits 
 
 
 
