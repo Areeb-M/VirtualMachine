@@ -1,0 +1,126 @@
+
+Virtual Machine specifications v1.0 by Areeb Mohammed
+
+Part A: Opcode List
+-----------------------------------------------------------------------------------------
+
+
+*****************************************************************************************
+** Memory - Load and Store Instructions                                                **
+***************************************************************************************** 
+
+-- Load: 7 instructions
+LB          location        Load Byte   
+LF          location        Load Float
+LD          location        Load Double
+LHW         location        Load Halfword
+LW          location        Load Word
+LDW         location        Load Double Word
+LS          location, n     Load n-bytes
+
+-- Save: 7 instructions
+SB          location        Save Byte
+SF          location        Save Float
+SD          location        Save Double
+SHW         location        Save Halfword
+SW          location        Save Word
+SDW         location        Save Double Word
+SS          location, n     Save n-bytes
+
+*****************************************************************************************
+** CPU - Arithmetic Instructions                                                       **
+*****************************************************************************************
+
+-- Math: 50 instructions
+ADD         none            ADD word
+ADDI        immediate       ADD Immediate word
+ADDU        none            ADD Unsigned word
+ADDUI       immediate       ADD Unsigned Immediate word
+ADDDW       none            ADD Double Word
+ADDIDW      immediate       ADD Unsigned Immediate Double Word
+ADDUDW      none            ADD Unsigned Double Word
+ADDUIDW     immediate       ADD Unsigned Immediate Double Word
+ADDIHW      immediate       ADD Immediate Half Word
+ADDUIHW     immediate       ADD Unsigned Immediate Half Word
+DIV         none            DIVide word
+DIVI        immediate       DIVide Immediate word
+DIVU        none            DIVide Unsigned word
+DIVUI       immediate       DIVide Unsigned Immediate word
+DIVDW       none            DIVide Double Word
+DIVIDW      immediate       DIVide Immediate Double Word
+DIVUDW      none            DIVide Unsigned Double Word
+DIVUIDW     immediate       DIVide Unsigned Immediate Word
+DIVIHW      immediate       DIVide Immediate Half Word
+DIVUIHW     immediate       DIVide Unsigned Immediate Half Word
+MOD         none            MODulo word
+MODI        immediate       MODulo Immediate word
+MODU        none            MODulo Unsigned word
+MODUI       immediate       MODulo Unsigned Immediate word
+MODDW       none            MODulo Double Word
+MODIDW      immediate       MODulo Immediate Double Word
+MODUDW      none            MODulo Unsigned Double Word
+MODUIDW     immediate       MODulo Unsigned Immediate Word
+MODIHW      immediate       MODulo Immediate Half Word
+MODUIHW     immediate       MODulo Unsigned Immediate Half Word
+MUL         none            MULtiply word
+MULI        immediate       MULtiply Immediate word
+MULU        none            MULtiply Unsigned word
+MULUI       immediate       MULtiply Unsigned Immediate word
+MULDW       none            MULtiply Double Word
+MULIDW      immediate       MULtiply Immediate Double Word
+MULUDW      none            MULtiply Unsigned Double Word
+MULUIDW     immediate       MULtiply Unsigned Immediate Word
+MULIHW      immediate       MULtiply Immediate Half Word
+MULUIHW     immediate       MULtiply Unsigned Immediate Half Word
+SUB         none            SUBtract word
+SUBI        immediate       SUBtract Immediate word
+SUBU        none            SUBtract Unsigned word
+SUBUI       immediate       SUBtract Unsigned Immediate word
+SUBDW       immediate       SUBtract Double Word
+SUBIDW      immediate       SUBtract Immediate Double Word
+SUBUDW      none            SUBtract Unsigned Double Word
+SUBUIDW     immediate       SUBtract Unsigned Immediate Double Word
+SUBIHW      immediate       SUBtract Immediate Half Word
+SUBUIHW     immediate       SUBtract Unsigned Immediate Half Word
+
+-- Logic: 20 operations
+AND         none            AND word
+ANDI        immediate       AND Immediate word
+ANDDW       none            AND Double Word
+ANDIDW      immediate       AND Immediate Double Word
+ANDIHW      immediate       AND Immediate Half Word
+NOT         none            NOT word
+NOTI        immediate       NOT Immediate word
+NOTDW       none            NOT Double Word
+NOTIDW      immediate       NOT Immediate Double Word
+NOTIHW      immediate       NOT Immediate Half Word
+OR          none            OR word
+ORI         immediate       OR Immediate word
+ORDW        none            OR Double Word
+ORIDW       immediate       OR Immediate Word
+ORIHW       immediate       OR Immediate Half Word
+XOR         none            XOR word
+XORI        immediate       XOR Immediate word
+XORDW       none            XOR Double Word
+XORIDW      immediate       XOR Immediate Double Word
+XORIHW      immediate       XOR Immediate Half Word
+
+-- Bitwise:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*****************************************************************************************
+**                                                                                     **
+***************************************************************************************** 
