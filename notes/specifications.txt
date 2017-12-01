@@ -105,7 +105,7 @@ XORDW       none            XOR Double Word
 XORIDW      immediate       XOR Immediate Double Word
 XORIHW      immediate       XOR Immediate Half Word
 
--- Bit Movement: 20 instructions
+-- Bit Shift: 20 instructions
 ASL         n               Arithmetic Shift word Left by n-bits
 ASBL        n               Arithmetic Shift Byte Left by n-bits
 ASDWL       n               Arithmetic Shift Double Word Left by n-bits
